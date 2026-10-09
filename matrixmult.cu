@@ -108,7 +108,7 @@ int main(void)
     // Run the CPU matrix multiplication and measure its time.
     clock_t start = clock();
 
-/*    int retvalue = matrixmultiplication(row,col,row1,col1,firstmat,secondmat,resultmat);
+    int retvalue = matrixmultiplication(row,col,row1,col1,firstmat,secondmat,resultmat);
 
     clock_t end = clock();
 
@@ -126,7 +126,7 @@ int main(void)
     double cpuSeconds = (double)(end - start) / CLOCKS_PER_SEC;
 
     printf("CPU time: %.9f seconds\n", cpuSeconds);
-*/
+
     // Declare pointers for memory on the GPU.
     double *firstmat_d;
     double *secondmat_d;
@@ -159,7 +159,7 @@ int main(void)
     cudaMemcpy(resultmat,resultmat_d,resultBytes,cudaMemcpyDeviceToHost);
 
     // Timer finish
-    int end = clock();
+    end = clock();
 
     double gpuSeconds = (double)(end - start) / CLOCKS_PER_SEC;
 
