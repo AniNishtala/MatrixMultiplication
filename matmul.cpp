@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #include <pthread.h>
 
-#define max_thread_count 16 // Ryzen 5800H has 16 threads. Ryzen 9950X has 32 threads.
+#define max_thread_count 16 // Ryzen 5800H has 16 threads for my laptop.  Ryzen 9950X has 32 threads for my desktop.
 using namespace std;
 pthread_mutex_t matrix_lock;
 struct threaddata
