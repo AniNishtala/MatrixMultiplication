@@ -6,4 +6,4 @@ GPU time: 20.750599000 seconds
 CPU Results
 Enter rows: 8192 8192
 Enter columns: 8192 8192
-CPU time: 4.5 hours
+CPU time: 4984.500526000 seconds
