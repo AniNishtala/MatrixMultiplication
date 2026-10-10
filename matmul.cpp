@@ -143,7 +143,6 @@ int main()
 	auto end = chrono::steady_clock::now();
 	chrono::duration<double, milli> sequential_elapsed = end - start;
 //	printmatrix(sequentialresult);
-	cout << "2 sticks of RAM COSTS $900. 67 on the merry christmas" << endl;
 	cout << "Matrix multiplication took " << sequential_elapsed.count() << " milliseconds. " << endl;
 	cout << "----------------------" << endl << " Implementing parallelized version " << endl;
 	auto parastart = chrono::steady_clock::now();
